@@ -5,7 +5,7 @@ const charactersInstance = axios.create({
 })
 
 export const charactersAPI = {
-	getAllCharacters(page?: number, name?: string, status?: string) {
+	getAllCharacters(page: number = 1, name: string = '', status: string = '') {
 		return charactersInstance.get('/', {params: {page, name, status}})
 	},
 	getSingleCharacter(id: number) {
