@@ -3,7 +3,7 @@ export type GetAllCharactersResponseInfoType = {
 	pages: number
 	next: string | null,
 	prev: string | null
-}
+} | null
 
 export type CharactersStatusType = "Alive" | "Dead" | "unknown"
 export type CharacterType = {
@@ -12,7 +12,7 @@ export type CharacterType = {
 	status: CharactersStatusType
 	species: string
 	type: string
-	gender: string
+	gender: 'Female' | 'Male' | 'Genderless' | 'unknown'
 	origin: {
 		name: string
 		url: string
