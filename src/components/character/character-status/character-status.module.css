@@ -1,0 +1,22 @@
+.characterStatus{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.circleAlive {
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-radius: 50%;
+
+}
+
+.circleDead {
+    background-color: red;
+}
+.circleUnknown{
+    background-color: gray;
+}

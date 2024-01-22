@@ -1,0 +1,15 @@
+.characterInfo {
+    width: 350px;
+    height: 200px;
+    background-color: #3C3E44;
+    padding: 15px 10px;
+}
+
+.characterStatus {
+    padding-top: 10px;
+    color: white;
+}
+
+.characterName {
+    color: white;
+}
