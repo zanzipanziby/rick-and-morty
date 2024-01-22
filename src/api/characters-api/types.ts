@@ -30,3 +30,9 @@ export type GetAllCharactersResponseType = {
 	info: GetAllCharactersResponseInfoType
 	results: CharacterType[]
 }
+
+export type GetAllCharactersRequestType = {
+	page?: number
+	name?: string
+	status?: string
+}

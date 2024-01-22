@@ -1,12 +1,13 @@
 import axios from "axios";
-import {CharacterType, GetAllCharactersResponseType} from "./types";
+import {CharacterType, GetAllCharactersRequestType, GetAllCharactersResponseType} from "./types";
 
 const charactersInstance = axios.create({
 	baseURL: "https://rickandmortyapi.com/api/character",
 })
 
 export const charactersAPI = {
-	getAllCharacters(page: number = 1, name: string = '', status: string = '') {
+	getAllCharacters(options: GetAllCharactersRequestType = {page: 1, name: '', status: ''}) {
+		const {page, name, status} = options
 		return charactersInstance.get<GetAllCharactersResponseType>('/', {params: {page, name, status}})
 	},
 	getSingleCharacter(id: number) {
