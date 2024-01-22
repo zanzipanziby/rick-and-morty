@@ -1,5 +1,6 @@
-import {CharacterStatusType} from "../../../local-data/character"
+
 import s from "./character-status.module.css"
+import {CharacterStatusType} from "../../../api/characters-api/types";
 
 type Props = {
     status: CharacterStatusType

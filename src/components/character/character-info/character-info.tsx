@@ -1,8 +1,8 @@
 import React from 'react';
 import {CharacterName} from "../character-name/character-name";
-import {CharacterStatusType} from "../../../local-data/character";
 import {CharacterStatus} from "../character-status/character-status";
 import s from "./character-info.module.css"
+import {CharacterStatusType} from "../../../api/characters-api/types";
 
 type Props={
     title: string;

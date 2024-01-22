@@ -5,11 +5,11 @@ export type GetAllCharactersResponseInfoType = {
 	prev: string | null
 } | null
 
-export type CharactersStatusType = "Alive" | "Dead" | "unknown"
+export type CharacterStatusType = "Alive" | "Dead" | "unknown"
 export type CharacterType = {
 	id: number
 	name: string
-	status: CharactersStatusType
+	status: CharacterStatusType
 	species: string
 	type: string
 	gender: 'Female' | 'Male' | 'Genderless' | 'unknown'
