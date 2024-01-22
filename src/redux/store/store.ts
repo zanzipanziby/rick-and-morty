@@ -1,11 +1,11 @@
-import {combineReducers, legacy_createStore} from "@reduxjs/toolkit";
+import {combineReducers, configureStore} from "@reduxjs/toolkit";
 import {allCharactersReducer} from "../reducers/characters-reducer/all-characters-reducer";
 
 const rootReducer = combineReducers({
 	characters: allCharactersReducer
 })
 
-const store = legacy_createStore(rootReducer)
+const store = configureStore({reducer: rootReducer})
 
 // Infer the `RootState` and `AppDispatch` types from the store itself
 export type RootState = ReturnType<typeof store.getState>
